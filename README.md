@@ -19,11 +19,30 @@ Write your own steps
 
 ## PROGRAM
 
-Include your code here
+''''
+admin.py
+
+from django.contrib import admin
+from .models import Employee,EmployeeAdmin
+admin.site.register(Employee,EmployeeAdmin)
+
+modles.py
+
+from django.db import models
+from django.contrib import admin
+class Employee (models.Model):
+    eid=models.CharField(max_length=20,help_text="Employee")
+    name=models.CharField(max_length=100)
+    salary=models.IntegerField()
+    age=models.IntegerField()
+    email=models.EmailField()
+
+class EmployeeAdmin(admin.ModelAdmin):
+    list_display=('eid','name','salary','age','email')
+''''
 
 ## OUTPUT
-
-Include the screenshot of your admin page.
+![Alt text](<Screenshot from 2023-12-11 20-37-15.png>)
 
 
 ## RESULT
