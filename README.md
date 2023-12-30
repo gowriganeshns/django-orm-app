@@ -89,8 +89,13 @@ admin.site.register(Employee,EmployeeAdmin)
 ## OUTPUT
 
 ### Server Output:
+
+
 ![django server output](https://github.com/jabezs2005/django-orm-app/assets/147473463/f672e449-02bc-4834-97d2-7c0201621150)
 
 
 
 ## RESULT
+
+Successfully created the django-orm-app.
+
